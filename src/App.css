@@ -23,7 +23,7 @@
 
 .App.fade-in {
   opacity: 0;
-  transition: opacity 1s ease-in-out, max-height 0s ease-in-out, padding 2.5s ease-in-out;
+  transition: opacity 1s ease-in-out, max-height 0s ease-in-out, padding 0s ease-in-out;
   transition-delay: 1.5s;
   padding: 0;
   max-height: 0;
@@ -88,7 +88,7 @@ button.fuente {
   justify-content: center;
   align-items: center;
   border-radius: 1rem;
-  background: linear-gradient(333deg, rgb(58, 58, 131), rgb(79, 149, 179));
+  background: linear-gradient(333deg, rgb(58, 58, 131), rgb(58, 58, 131));
   /* background-color: rgb(58, 58, 131); */
   width: 100%;
   /* Ocupa todo el espacio disponible en la columna */
@@ -103,6 +103,11 @@ button.fuente {
 a,
 a:visited,
 a:active {
+  height: auto;
   color: whitesmoke;
   text-decoration: none;
+}
+
+.info-text {
+  height: auto;
 }
