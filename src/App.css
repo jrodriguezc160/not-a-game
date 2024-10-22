@@ -6,9 +6,8 @@
   gap: 1rem;
   transition: opacity .5s ease, max-height 2.5s ease, padding 3s ease;
   background-color: #1a1a1a;
-  padding: 10vh 5vh;
-  width: calc(100% - 10vh);
-  /* max-height: calc(100vh - 20vh); */
+  padding: 10vh 10vw;
+  width: calc(100vw - 20vw);
   max-height: calc(100vh - 20vh);
   overflow: hidden;
   text-align: center;
@@ -31,14 +30,14 @@
 
 .App.fade-in.visible {
   opacity: 1;
-  padding: 10vh 5vh;
+  padding: 10vh 10vw;
   max-height: calc(100vh - 20vh);
   /* Altura máxima restaurada */
 }
 
 h1,
 h2 {
-  margin-bottom: 0rem;
+  margin: 0rem;
   height: auto;
   font-size: 1.5rem;
 }
@@ -69,4 +68,32 @@ button {
 p {
   margin-bottom: 2rem;
   height: auto;
+}
+
+.fuentes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  width: 100%;
+  height: auto;
+  overflow: auto;
+}
+
+button.fuente {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  background: linear-gradient(333deg, rgb(58, 58, 131), rgb(79, 149, 179));
+  /* background-color: rgb(58, 58, 131); */
+  width: 100%;
+  /* Ocupa todo el espacio disponible en la columna */
+  height: 5rem;
+}
+
+a,
+a:visited,
+a:active {
+  color: whitesmoke;
+  text-decoration: none;
 }

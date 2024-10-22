@@ -1,6 +1,7 @@
 import './App.css';
 import { useState } from 'react';
 import Select from './components/Select';
+import Fuente from './components/Fuente';
 
 function App () {
   const [number, setNumber] = useState(2);
@@ -28,6 +29,16 @@ function App () {
     }
   };
 
+  // Array de objetos con títulos y enlaces
+  const fuentes = [
+    {
+      title: 'Historia del conflicto en Gaza', link: 'https://youtu.be/ulWMA4GZ1Z0?si=r7GHHa3nO1aZ2JhV'
+    },
+    { title: 'Derechos humanos en Gaza', link: 'https://example.com/derechos-humanos-gaza' },
+    { title: 'Análisis del conflicto internacional', link: 'https://example.com/analisis-conflicto' },
+    { title: 'Apoyo internacional y la guerra en Gaza', link: 'https://example.com/apoyo-internacional-gaza' }
+  ];
+
   // Función para manejar el clic en "Continuar"
   const handleContinue = () => {
     setHasContinued(true);
@@ -45,12 +56,19 @@ function App () {
       {/* Segundo div, con fade-in cuando hasContinued es true */}
       <div className={`App fade-in ${hasContinued ? 'visible' : ''}`}>
         <h1>{number}</h1>
-        <p>{getMessage(number)}</p>
+        <p style={{ marginTop: '0' }}>{getMessage(number)}</p>
 
         <div className="info-text">
           <p>En el mundo hay más de 8 grandes conflictos bélicos, con millones de personas sufriendo las consecuencias.</p>
           <p>En Gaza se cometen numerosas violaciones de derechos humanos pero la contienda sigue con apoyo económico y armamentístico de otros países que deberían buscar la paz.</p>
           <p>¿Quieres saber más sobre la guerra de Gaza? <b>Infórmate y denuncia la situación</b></p>
+        </div>
+
+        {/* Mapear el array de fuentes y crear un componente Fuente por cada elemento */}
+        <div className="fuentes">
+          {fuentes.map((fuente, index) => (
+            <Fuente key={index} title={fuente.title} link={fuente.link} />
+          ))}
         </div>
       </div>
     </>
