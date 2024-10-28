@@ -56,7 +56,7 @@ function App () {
       {/* Segundo div, con fade-in cuando hasContinued es true */}
       <div className={`App fade-in ${hasContinued ? 'visible' : ''}`}>
         <h1>{number}</h1>
-        <p style={{ marginTop: '0' }}>{getMessage(number)}</p>
+        <p style={{ marginTop: '0', marginBottom: '0' }}>{getMessage(number)}</p>
 
         <div className="info-text">
           <p>En el mundo hay más de 8 grandes conflictos bélicos, con millones de personas sufriendo las consecuencias.</p>
