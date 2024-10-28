@@ -31,10 +31,10 @@ function App () {
 
   // Array de objetos con títulos y enlaces
   const fuentes = [
+    { title: '←  Volver', link: 'https://gazasnotagame.vercel.app/' },
     {
       title: 'Historia del conflicto en Gaza', link: 'https://youtu.be/ulWMA4GZ1Z0?si=r7GHHa3nO1aZ2JhV'
     },
-    { title: 'Derechos humanos en Gaza', link: 'https://example.com/derechos-humanos-gaza' },
     { title: 'Análisis del conflicto internacional', link: 'https://example.com/analisis-conflicto' },
     { title: 'Apoyo internacional y la guerra en Gaza', link: 'https://example.com/apoyo-internacional-gaza' }
   ];

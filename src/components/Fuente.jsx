@@ -5,8 +5,6 @@ import '../App.css';
 export default function Fuente ({ title, link }) {
 
   return (
-    <button className='fuente'>
-      <a href={link}>{title}</a>
-    </button>
+    <a href={link} className='fuente'>{title}</a>
   );
 }

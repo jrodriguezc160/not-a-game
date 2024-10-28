@@ -79,20 +79,21 @@ p {
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
   width: 100%;
-  height: auto;
+  height: 75vh;
   overflow: auto;
 }
 
-button.fuente {
+.fuente {
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 1rem;
-  background: linear-gradient(333deg, rgb(58, 58, 131), rgb(58, 58, 131));
+  background: rgb(58, 58, 131) !important;
+  padding: .25rem;
   /* background-color: rgb(58, 58, 131); */
-  width: 100%;
+  width: calc(100% - .5rem);
   /* Ocupa todo el espacio disponible en la columna */
-  height: 5rem;
+  height: 4.5rem;
   color: whitesmoke;
 
   * {
