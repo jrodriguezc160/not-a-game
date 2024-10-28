@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 1.5rem;
   transition: opacity .5s ease, max-height 2.5s ease, padding 3s ease;
   background-color: #11111100;
   padding: 10vh 10vw;
@@ -61,19 +61,20 @@ h1 {
 .number-picker {
   outline: none;
   border: 0;
+  border: 1px solid #ebebeb50;
   border-radius: 5rem;
-  background-color: #1e1e1e90;
+  background-color: #1e1e1e75;
   padding: 0 .5rem;
   width: 50vw;
   height: 2.25rem;
-  color: whitesmoke;
+  color: #ebebeb !important;
 }
 
 button {
   outline: none;
   border: 0px solid black;
   border-radius: 5rem;
-  background-color: rgb(58, 58, 131);
+  background: #3a3a83b9;
   width: 50vw;
   height: 2.25rem;
   color: whitesmoke;
@@ -98,7 +99,7 @@ p {
   justify-content: center;
   align-items: center;
   border-radius: 1rem;
-  background: rgb(58, 58, 131);
+  background: #3a3a8390;
   padding: .25rem;
   /* background-color: rgb(58, 58, 131); */
   width: calc(100% - .5rem);
@@ -113,9 +114,9 @@ p {
 }
 
 .fuente.VOLVER {
-  border: 2px solid rgb(58, 58, 131);
+  border: 2px solid #3a3a8390;
   background: none;
-  color: rgb(190, 190, 226);
+  color: #9797e3de;
 }
 
 a,

@@ -30,7 +30,9 @@ code {
   left: 0;
   z-index: -1;
   animation: gradient 20s ease infinite;
-  background: linear-gradient(-45deg, #040015, #000e14, #0f0016);
+  background: linear-gradient(-45deg, #1d1a2b,
+      #191d26,
+      #1e102d);
   background-size: 400% 400%;
   width: 100vw;
   height: 100vh;
