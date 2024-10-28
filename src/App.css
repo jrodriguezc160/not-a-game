@@ -5,7 +5,7 @@
   align-items: center;
   gap: 1rem;
   transition: opacity .5s ease, max-height 2.5s ease, padding 3s ease;
-  background-color: #1a1a1a;
+  background-color: #11111100;
   padding: 10vh 10vw;
   width: calc(100vw - 20vw);
   height: 100%;
@@ -52,7 +52,7 @@ h1 {
   outline: none;
   border: 0;
   border-radius: 5rem;
-  background-color: #2a2a2a;
+  background-color: #1e1e1e;
   padding: 0 .5rem;
   width: 50vw;
   height: 2.25rem;
@@ -79,7 +79,7 @@ p {
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
   width: 100%;
-  height: 85vh;
+  height: 18vh;
   overflow: auto;
 }
 
@@ -93,15 +93,16 @@ p {
   /* background-color: rgb(58, 58, 131); */
   width: calc(100% - .5rem);
   /* Ocupa todo el espacio disponible en la columna */
-  height: 4.5rem;
+  height: 3.5rem;
   color: whitesmoke;
+  font-size: small;
 
   * {
     color: whitesmoke;
   }
 }
 
-.fuente.Volver {
+.fuente.VOLVER {
   border: 2px solid rgb(58, 58, 131);
   background: none;
   color: rgb(190, 190, 226);

@@ -31,12 +31,12 @@ function App () {
 
   // Array de objetos con títulos y enlaces
   const fuentes = [
-    { title: '←  Volver', link: 'https://gazasnotagame.vercel.app/' },
+    { title: '←  VOLVER', link: 'https://gazasnotagame.vercel.app/' },
     {
-      title: 'Historia del conflicto en Gaza', link: 'https://youtu.be/ulWMA4GZ1Z0?si=r7GHHa3nO1aZ2JhV'
+      title: 'HISTORIA DEL CONFLICTO EN GAZA', link: 'https://youtu.be/ulWMA4GZ1Z0?si=r7GHHa3nO1aZ2JhV'
     },
-    { title: 'Análisis del conflicto internacional', link: 'https://elpais.com/noticias/franja-gaza/' },
-    { title: 'Firma por el alto el fuego', link: 'https://www.es.amnesty.org/en-que-estamos/campanas/crisis-en-gaza-e-israel/' }
+    { title: 'ANÁLISIS DEL CONFLICTO INTERNACIONAL', link: 'https://elpais.com/noticias/franja-gaza/' },
+    { title: 'FIRMA POR EL ALTO EL FUEGO', link: 'https://www.es.amnesty.org/en-que-estamos/campanas/crisis-en-gaza-e-israel/' }
   ];
 
   // Función para manejar el clic en "Continuar"

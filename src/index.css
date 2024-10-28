@@ -8,7 +8,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   margin: 0;
-  background-color: #1a1a1a;
+  background-color: #111111;
   padding: 0;
   width: 100%;
   max-width: 100vw;
@@ -22,4 +22,42 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+@keyframes move {
+  from {
+    transform: rotate(0deg) scale(12) translateX(-20px);
+  }
+
+  to {
+    transform: rotate(360deg) scale(18) translateX(20px);
+  }
+}
+
+body::before,
+body::after {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  mix-blend-mode: screen;
+  animation: move infinite ease-in-out alternate;
+  width: 3em;
+  height: 3em;
+  content: '.';
+  text-shadow:
+    -1.5em 0 7px hsla(240, 100%, 50%, 0.9),
+    1.5em 0 7px hsla(360, 100%, 50%, 0.9),
+    0 -1.5em 7px hsla(120, 100%, 50%, 0.9),
+    0 1.5em 7px hsla(180, 100%, 50%, 0.9),
+    1.5em 1.5em 7px hsla(300, 100%, 50%, 0.9);
+}
+
+body::before {
+  animation-duration: 44s;
+  animation-delay: -27s;
+}
+
+body::after {
+  animation-duration: 43s;
+  animation-delay: -32s;
 }
