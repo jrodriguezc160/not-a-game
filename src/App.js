@@ -46,6 +46,7 @@ function App () {
 
   return (
     <>
+      <div className="gradient"></div>
       {/* Primer div, con fade-out cuando hasContinued es true */}
       <div className={`App ${hasContinued ? 'fade-out' : ''}`}>
         <h2>Tira el dado e introduce el número que has sacado</h2>

@@ -24,40 +24,28 @@ code {
     monospace;
 }
 
-@keyframes move {
-  from {
-    transform: rotate(0deg) scale(12) translateX(-20px);
-  }
-
-  to {
-    transform: rotate(360deg) scale(18) translateX(20px);
-  }
-}
-
-body::before,
-body::after {
+.gradient {
   position: fixed;
-  top: 50%;
-  left: 50%;
-  mix-blend-mode: screen;
-  animation: move infinite ease-in-out alternate;
-  width: 3em;
-  height: 3em;
-  content: '.';
-  text-shadow:
-    -1.5em 0 7px hsla(240, 100%, 50%, 0.9),
-    1.5em 0 7px hsla(360, 100%, 50%, 0.9),
-    0 -1.5em 7px hsla(120, 100%, 50%, 0.9),
-    0 1.5em 7px hsla(180, 100%, 50%, 0.9),
-    1.5em 1.5em 7px hsla(300, 100%, 50%, 0.9);
+  top: 0;
+  left: 0;
+  z-index: -1;
+  animation: gradient 20s ease infinite;
+  background: linear-gradient(-45deg, #08001c, #040015, #000e14, #001611);
+  background-size: 400% 400%;
+  width: 100vw;
+  height: 100vh;
 }
 
-body::before {
-  animation-duration: 44s;
-  animation-delay: -27s;
-}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
 
-body::after {
-  animation-duration: 43s;
-  animation-delay: -32s;
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }
